@@ -1,15 +1,16 @@
 
 Models for asadeye-website 
 
-1. Users 
-	- user_id : Int
-	- username : String
+1. UserProfile
+	- id : Int
+	- name : String
 	- email : Email
 	- password : Password
+	- phone_no : Phone Number	
 
 1. Address
 	- user_id : Int (Foreign Key)
-	- address_id : Int
+	- id : Int
 	- address_line_1 : String
 	- address_line_2 : String
 	- landmark : String
@@ -26,15 +27,16 @@ Models for asadeye-website
 	- order_date : Date
 
 1. Products
-	- product_id : Int
+	- id : Int
 	- product_name : String
 	- product_price : Double 
 	- product_desc : String
-	- [image_id	] : List[Int]
 
 1. Images
-	- image_id : Int
-	- product_id : Int
+	- id : Int
+	- image_name : String 
+	- path : File
+	- product_id : Object of type product (Foreign key)
 
 1. Wishlist
 	- user_id : Int
