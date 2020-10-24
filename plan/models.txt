@@ -1,6 +1,0 @@
-
-Models for asadeye
-
-- User 
-	- 
-- 
